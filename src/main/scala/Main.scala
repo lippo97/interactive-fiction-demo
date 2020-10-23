@@ -281,7 +281,6 @@ object Main extends App {
   var res: Either[String, String] = Right("")
 
   import cats.effect._
-  import cats.implicits._
   def putStr(value: String) = IO(print(value))
   def putStrLn(value: String) = IO(println(value))
   val readLn = IO(scala.io.StdIn.readLine())
